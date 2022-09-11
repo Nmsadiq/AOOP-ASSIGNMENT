@@ -23,8 +23,6 @@ System.out.println("Can't divide a number by 0");
 }
 
 
-
-
 //Built-in Exception -02
 //To demonstrate ArrayIndexOutOfBoundException
 try {
