@@ -1,0 +1,52 @@
+/*
+Author: Noor Mohammed Sadiq D
+Course: Advanced Object-Oriented Programming
+Course Code: 18UCSE508
+ASSIGNMENT:01
+Question-04
+USN:2SD21CS405---Sem:5--- Div.: A
+*/
+
+import java.io.*;
+
+class Main {
+public static void main(String[] args) throws IOException {
+
+try {
+FileInputStream fstream = new FileInputStream("C:/Users/nmsad/Downloads/Alphabets.txt");
+DataInputStream in = new DataInputStream(fstream);
+BufferedReader br = new BufferedReader(new InputStreamReader(in));
+
+FileWriter ostream = new FileWriter("C:/Users/nmsad/Downloads/Constants.txt");
+BufferedWriter outt = new BufferedWriter(ostream);
+
+FileWriter opstream = new FileWriter("C:/Users/nmsad/Downloads/vowels.txt");
+BufferedWriter out = new BufferedWriter(opstream);
+
+String str = br.readLine();
+char ch;
+for (int i = 0; i < str.length(); i++) {
+ch = str.charAt(i);
+
+if ((ch == 'a') || (ch == 'e') || (ch == 'i') || (ch == 'o') || (ch == 'u'))
+
+{
+System.out.println("VowelNotAllowedException");
+} else {
+outt.write(ch);
+}
+
+}
+
+// out.close();
+outt.close();
+br.close();
+} catch (Exception e) {
+System.err.println(e);
+
+}
+
+}
+
+}
+ 
