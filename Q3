@@ -1,0 +1,35 @@
+/*
+Author: Noor Mohammed Sadiq D
+Course: Advanced Object-Oriented Programming
+Course Code: 18UCSE508
+ASSIGNMENT:01
+Question-03
+USN:2SD21CS405---Sem:5--- Div.: A
+*/
+
+import java.util.*;  
+class Main
+{  
+public static void main(String[] args)  
+{  
+    String str1="sdmcet";
+Scanner sc= new Scanner(System.in); //System.in is a standard input stream  
+System.out.print("Enter a string: ");  
+String str= sc.nextLine();              //reads string   
+System.out.print("You have entered:"+str);             
+  try{
+    if(str.equals(str1))
+    {
+        System.out.println("\nSUCCESS");
+    }
+   else
+   {
+      System.out.println("\nSubstringNotFoundException"); 
+    }
+  }
+    catch(Exception e)
+    {
+        System.out.println("\nSubstringNotFoundException");
+    }
+}
+}  
