@@ -1,0 +1,33 @@
+/*
+Author: Noor Mohammed Sadiq D
+Course: Advanced Object-Oriented Programming
+Course Code: 18UCSE508
+ASSIGNMENT:01
+Question-02
+USN:2SD21CS405---Sem:5--- Div.: A
+*/
+//To Demonstrate the Prime Checking Technique Using Java and Exception Handling
+import java. util. Scanner;
+public class Main1 {
+public static void main (String [] args) {
+int num, i, count = 0;
+Scanner s = new Scanner (System.in);
+System.out.print("Enter a Number: ");
+num = s. nextInt ();
+for (i = 2; i < num; i++) {
+if (num % i == 0) {
+count++;
+break;		}	}
+try {
+if (count == 0)
+System.out.println("\nIt is a Prime Number.");
+else
+System.out.println("\nNumberNotPrimeException");
+
+} catch (Exception e) {
+
+System.out.println(e);
+System.out.println("NumberNotPrimeException ");
+}
+}
+}
