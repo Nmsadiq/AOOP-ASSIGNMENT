@@ -1,0 +1,52 @@
+/*
+Author: Noor Mohammed Sadiq D
+Course: Advanced Object-Oriented Programming
+Course Code: 18UCSE508
+ASSIGNMENT:01
+Question-01
+USN:2SD21CS405---Sem:5--- Div.: A
+*/
+
+//Built-in Exception -01
+//To demonstrate ArithmeticException
+class Main {
+public static void main (String args [])
+{
+try {
+int a = 30, b = 0;
+int c = a / b; // cannot divide by zero
+System.out.println("Result = " + c);
+}
+catch (ArithmeticException e)
+{
+System.out.println("Can't divide a number by 0");
+}
+
+
+
+
+//Built-in Exception -02
+//To demonstrate ArrayIndexOutOfBoundException
+try {
+int a[] = new int[5];
+a[6] = 9; // accessing 7th element in an array of
+// size 5
+}
+catch (ArrayIndexOutOfBoundsException e)
+{
+System.out.println("Array Index is Out of Bounds");
+}
+
+
+//Built-in Exception -03
+//To demonstrate NullPointerException
+try {
+String a = null; // null value
+System.out.println(a.charAt(0));
+}
+catch (NullPointerException e)
+{
+System.out.println("NullPointerException..");
+}
+}
+}
